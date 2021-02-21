@@ -141,8 +141,212 @@ body {
   }
 }
 
+
+
+section {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 10%;
+  /*
+  background: #333;
+  */
+  z-index: 99;
+}
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.testing {
+  display: block;
+  position: relative;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 8px 30px;
+  font-size: 0.75em;
+  letter-spacing: 0.35em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+  /*
+  margin: 0 auto;
+  margin-top: 100px;
+  */
+  z-index: 99;
+}
+.testing:before, .testing:after {
+  content: "GSU";
+  position: absolute;
+  padding: 8px 0;
+  width: 100%;
+  -webkit-clip: rect(0px, 0px, 0px, 0px);
+  clip: rect(0px, 0px, 0px, 0px);
+  background: #fff;
+  color: #000;
+}
+.testing:before {
+  left: -3px;
+  top: -2px;
+  text-shadow: 2px 0 #fff;
+  box-shadow: 2px 0 #fff;
+}
+.testing:after {
+  left: 2px;
+  bottom: -2px;
+  text-shadow: -1px 0 #fff;
+  box-shadow: -1px 0 #fff;
+}
+.testing:hover {
+  background: white;
+  color: black;
+}
+.testing:hover:before {
+  animation: glitch-test 1.5s infinite linear alternate-reverse;
+}
+.testing:hover:after {
+  -webkit-animation: glitch-test 2s infinite linear alternate;
+          animation: glitch-test 2s infinite linear alternate;
+}
+
+@-webkit-keyframes glitch-test {
+  0% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  5.88235% {
+    clip: rect(0px, 600px, 0px, 0px);
+  }
+  11.76471% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  17.64706% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  23.52941% {
+    clip: rect(100px, 600px, 100px, 0px);
+  }
+  29.41176% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  35.29412% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  41.17647% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  47.05882% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  52.94118% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  58.82353% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  64.70588% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  70.58824% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  76.47059% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  82.35294% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  88.23529% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  94.11765% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  100% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+}
+
+@keyframes glitch-test {
+  0% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  5.88235% {
+    clip: rect(0px, 600px, 0px, 0px);
+  }
+  11.76471% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  17.64706% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  23.52941% {
+    clip: rect(100px, 600px, 100px, 0px);
+  }
+  29.41176% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  35.29412% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  41.17647% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  47.05882% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  52.94118% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  58.82353% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  64.70588% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  70.58824% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  76.47059% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  82.35294% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  88.23529% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  94.11765% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  100% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+}
+
 /*
 Copyright (c) 2021 by Elisabeth Diang (https://codepen.io/elisabethdiang/pen/WNbBxXq)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/*
+Copyright (c) 2021 by barny (https://codepen.io/kixune/pen/xLONve)
+Fork of an original work Cool button hover glitch effect (https://codepen.io/leonardospeca/pen/bwqaaB
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
