@@ -93,14 +93,16 @@ body {
 
   background: repeating-linear-gradient(
     to bottom,
+    /*
+    Make scanlines smaller
     transparent 0%,
+    */
     rgba(255, 255, 255, 0.05) .5%,
     transparent 1%
   );
 
   animation: fudge 7s ease-in-out alternate infinite;
 }
-
 
 @keyframes fudge {
   from {
@@ -110,6 +112,17 @@ body {
     transform: translate(0px, 2%);
   }
 }
+
+/*
+@keyframes fudge {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, 2%);
+  }
+}
+*/
 
 .glow {
   @extend .glitch;
