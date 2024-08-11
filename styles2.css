@@ -3,6 +3,10 @@ body {
   color: cyan;
 }
 
+pre {
+  background-color: black;
+}
+
 .glitch {
   color: rgb(223, 191, 191);
   position: relative;
