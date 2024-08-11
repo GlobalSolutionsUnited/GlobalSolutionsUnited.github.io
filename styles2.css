@@ -154,7 +154,7 @@ pre {
 section {
   box-sizing: border-box;
   font-family: Helvetica;
-  display: flex;
+  display: contents;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -163,8 +163,8 @@ section {
   padding: 0 10%;
   /*
   background: #333;
-  */
   z-index: 99;
+  */
 }
 
 a {
