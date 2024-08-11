@@ -177,6 +177,7 @@ a {
   display: block;
   position: relative;
   background: none;
+  background-color: black;
   border: none;
   outline: none;
   cursor: pointer;
@@ -186,7 +187,7 @@ a {
   letter-spacing: 0.35em;
   text-align: center;
   text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   transition: all 0.2s ease;
   /*
   margin: 0 auto;
